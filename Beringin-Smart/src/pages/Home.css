@@ -1,0 +1,213 @@
+/* Home.css - Responsive Mobile-First Styling for Beringin Smart (Anis Aristi Edition) */
+
+/* Royal Amethyst Header Toolbar */
+.home-header-toolbar {
+  --background: linear-gradient(135deg, #1e0b4a 0%, #3b0764 50%, #581c87 100%);
+  --color: #ffffff;
+  --padding-start: 12px;
+  --padding-end: 8px;
+  --padding-top: 4px;
+  --padding-bottom: 4px;
+  --min-height: 58px;
+  border-bottom: 1px solid rgba(167, 139, 250, 0.25);
+}
+
+.mobile-header-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.mobile-logo-box {
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.mobile-brand-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.mobile-brand-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.2px;
+  line-height: 1.15;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Outfit', sans-serif !important;
+}
+
+.mobile-brand-subtitle {
+  font-size: 0.68rem;
+  color: #e9d5ff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 2px;
+  white-space: nowrap;
+}
+
+.mobile-header-end {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.mobile-avatar-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 3px 10px 3px 3px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.mobile-avatar-circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #ffffff;
+}
+
+.mobile-user-name {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #ffffff;
+  max-width: 72px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mobile-logout-btn {
+  --color: #ffffff;
+  margin: 0;
+  --padding-start: 4px;
+  --padding-end: 4px;
+}
+
+/* Greeting Hero Banner */
+.home-hero-greeting {
+  background: #ffffff;
+  border: 1px solid #ede9fe;
+  border-radius: 18px;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.05);
+}
+
+/* Mobile Segment Pill Switcher */
+.mobile-view-segment {
+  background: #ede9fe;
+  border-radius: 9999px;
+  padding: 3px;
+  margin-bottom: 14px;
+}
+
+.mobile-view-segment ion-segment-button {
+  --background: transparent;
+  --background-checked: #ffffff;
+  --color: #6d28d9;
+  --color-checked: #4c1d95;
+  --indicator-color: transparent;
+  --border-radius: 9999px;
+  min-height: 38px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Category Filter Scroll */
+.category-filter-scroll {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  margin-top: 6px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.category-filter-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-chip-active {
+  --background: #7c3aed !important;
+  --color: #ffffff !important;
+  font-weight: 700;
+  margin: 0;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.35);
+}
+
+.filter-chip-inactive {
+  --background: #ffffff !important;
+  --color: #6d28d9 !important;
+  border: 1px solid #ddd6fe !important;
+  margin: 0;
+  flex-shrink: 0;
+  border-radius: 9999px;
+}
+
+/* Ticket Card with Left Accent Border */
+.ticket-card-hover {
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1.5px solid #ede9fe;
+  border-left: 5px solid #7c3aed;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  background: #ffffff;
+}
+
+.ticket-card-hover.pending {
+  border-left-color: #f59e0b;
+}
+
+.ticket-card-hover.completed {
+  border-left-color: #10b981;
+}
+
+.ticket-card-hover:active {
+  transform: scale(0.98);
+}
+
+.ticket-card-hover:hover {
+  border-color: #a78bfa;
+  border-left-width: 6px;
+  box-shadow: 0 8px 22px -2px rgba(124, 58, 237, 0.15);
+}
+
+.empty-state-box {
+  text-align: center;
+  padding: 34px 16px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 2px dashed #ddd6fe;
+  color: #6d28d9;
+}
